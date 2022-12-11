@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Control de gastos</title>
+</head>
+<body>
+  <h1>Control de gastos</h1>
+    <div class="controlMoneyContainer">
+        <h2>Tu ahorro</h2>
+        <h3 id="balance"></h3>
+
+        <div class="moneyMaxMinContainer">
+            <div>
+                <h4>Dinero ingresado</h4>
+                <p id="moneyMax" class="moneyMax"></p>
+            </div>
+            <div>
+                <h4>Dinero gastado</h4>
+                <p id="moneyMin" class="moneyMin"></p>
+            </div>
+        </div>
+
+        <h2>Historial de gastos</h2>
+        <ul id="list" class="list">
+        </ul>
+
+        <h3>Añadir nuevo movimiento:</h3>
+        <form id="form">
+            <div class="formControl1">
+                <label for="text">Concepto: </label>
+                <input type="text" id="text" placeholder="Añade un concepto"/>
+            </div>
+            <div class="formControl2">
+                <label for="amount">Cantidad: </label>
+                <input type="number" id="amount" placeholder="Añade una cantidad" />
+            </div>
+            <button type="button" class="button" onclick="addTransaction()">Añadir movimiento</button>
+        </form>
+
+        <script src="./index.js"></script>
+</body>
+</html>

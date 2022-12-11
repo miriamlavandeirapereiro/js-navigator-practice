@@ -1,0 +1,65 @@
+body {
+    background-color: #dedede;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10;
+}
+
+.controlMoneyContainer {
+    width: 400px;
+}
+
+.moneyMax {
+    color:darkgreen;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.moneyMin {
+    color:#e74c3c;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+label {
+    display: flexbox;
+    padding: 10;
+    margin: 10px;
+}
+
+.button {
+    cursor:pointer;
+    background-color: cadetblue;
+    color: black;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li.newAmount {
+    border-right: 5px solid green;
+}
+
+.list li.consumedMoney {
+    border-right: 5px solid red;
+}
+
